@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faisal's Ludo</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <container class="gameBoard">
+      <div class="player1Home">
+        <div class="playerInfo">
+          <div>
+            <p>Locker For A</p>
+            <h3>2A</h3>
+            <div class="red0 red1 red2 red3 red4 red5">
+              <div class="redPawn" id="redPawnA"></div>
+              <div class="redPawn" id="redPawnB"></div>
+            </div>
+            <div class="endForRedPawnA"></div>
+            <div class="endForRedPawnB"></div>
+          </div>
+        </div>
+      </div>
+      <div class="ludoBoard">
+        <div class="upperLadder">
+          <div class="playBox upperHorizontalBox red6 blue20 redStart"></div>
+          <div class="playBox upperHorizontalBox red7 blue21"></div>
+          <div class="playBox upperHorizontalBox red8 blue22"></div>
+          <div class="playBox upperHorizontalBox red9 blue23"></div>
+          <div class="playBox upperHorizontalBox red10 blue24"></div>
+          <div class="playBox upperHorizontalBox red11 blue25"></div>
+          <div class="playBox upperHorizontalBox red12 blue26"></div>
+          <div class="playBox upperHorizontalBox red13 blue27 cornerTR"></div>
+        </div>
+        <div class="middleLadder">
+          <div class="leftLadder">
+            <div class="playBox leftVerticalBox red33 blue19 redEnd"></div>
+            <div class="playBox leftVerticalBox red32 blue18"></div>
+            <div class="playBox leftVerticalBox red31 blue17"></div>
+            <div class="playBox leftVerticalBox red30 blue16"></div>
+            <div class="playBox leftVerticalBox red29 blue15"></div>
+            <div class="playBox leftVerticalBox red28 blue14"></div>
+          </div>
+
+          <div class="mid">
+            <div class="instBar">Turn Red</div>
+            <!-- <div class="rollBtn"><button class="btn" id="rollDice">ROLL!</button></div> -->
+            <div class="diceNo"></div>
+            <div class="checkBox">
+              <input type="text" name="" id="inputBox" placeholder="Psst!" />
+            </div>
+            <div class="senterBtn"><button id="btnEnter">ROLL</button></div>
+          </div>
+
+          <div class="rightLadder">
+            <div class="playBox rightVerticalBox red14 blue28"></div>
+            <div class="playBox rightVerticalBox red15 blue29"></div>
+            <div class="playBox rightVerticalBox red16 blue30"></div>
+            <div class="playBox rightVerticalBox red17 blue31"></div>
+            <div class="playBox rightVerticalBox red18 blue32"></div>
+            <div class="playBox rightVerticalBox red19 blue33 blueEnd"></div>
+          </div>
+        </div>
+
+        <div class="lowerLadder">
+          <div class="playBox lowerHorizontalBox red27 blue13 cornerBL"></div>
+          <div class="playBox lowerHorizontalBox red26 blue12"></div>
+          <div class="playBox lowerHorizontalBox red25 blue11"></div>
+          <div class="playBox lowerHorizontalBox red24 blue10"></div>
+          <div class="playBox lowerHorizontalBox red23 blue9"></div>
+          <div class="playBox lowerHorizontalBox red22 blue8"></div>
+          <div class="playBox lowerHorizontalBox red21 blue7"></div>
+          <div class="playBox lowerHorizontalBox red20 blue6 blueStart"></div>
+        </div>
+      </div>
+      <div class="player2Home">
+        <div class="playerInfo playerBInfo">
+          <div>
+            <p>Locker For B</p>
+            <h3>2B</h3>
+            <div class="blue0 blue1 blue2 blue3 blue4 blue5">
+              <div class="bluePawn" id="bluePawnA"></div>
+              <div class="bluePawn" id="bluePawnB"></div>
+            </div>
+            <div class="endForBluePawnA"></div>
+            <div class="endForBluePawnB"></div>
+          </div>
+        </div>
+      </div>
+    </container>
+
+    <div class="instructions animated">
+      <h3>Instructions</h3>
+      Enter the desired number in the textbox or leave it blank to roll the dice
+      and press ROLL
+    </div>
+
+    <audio src="audio/music.mp3" class="audioFile"></audio>
+    <audio src="audio/jumpback.mp3" class="jumpBack"></audio>
+    <audio src="audio/triumph.mp3" class="triumph"></audio>
+    <button class="bgmusic">
+      <img src="volume.svg" alt="" class="bgmusicsvg" />
+    </button>
+  </body>
+  <script src="js/main1.js"></script>
+</html>

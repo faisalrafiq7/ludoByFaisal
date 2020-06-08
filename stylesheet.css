@@ -1,0 +1,292 @@
+* {
+  margin: 50;
+  padding: 0;
+  font-family: "Fredericka the Great", cursive;
+}
+body {
+  background-color: #fbfbfb;
+  margin-top: 100px;
+}
+
+/***************************************************** Board stylings ***********************************************/
+
+.ludoBoard {
+  display: grid;
+  /* border: blue 1px solid; */
+  justify-content: center;
+}
+.playBox {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  /* border: black solid;
+    border-width: 1px 0.5px; */
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+.upperHorizontalBox {
+  border: #ccd0cb solid;
+  border-width: 1px 0.5px 0.5px 0.5px;
+}
+.lowerHorizontalBox {
+  border: #ccd0cb solid;
+  border-width: 0.5px 0.5px 1px 0.5px;
+}
+.leftVerticalBox {
+  border: #ccd0cb solid;
+  border-width: 0.5px 0.5px 0.5px 1px;
+}
+.rightVerticalBox {
+  border: #ccd0cb solid;
+  border-width: 0.5px 1px 0.5px 0.5px;
+}
+.mid {
+  border: #ccd0cb solid 0.5px;
+}
+.redStart {
+  border-left-width: 1px;
+  border-bottom-width: 0.5px;
+  background-color: #e06666;
+  border-top-left-radius: 5px;
+}
+.redEnd {
+  background-color: #ea9999;
+  /* /* opacity: 0.5; */
+}
+.cornerTR {
+  border-right-width: 1px;
+  border-bottom-width: 0.5px;
+  border-top-right-radius: 5px;
+}
+.blueStart {
+  border-right-width: 1px;
+  border-top-width: 0.5px;
+  background-color: #6fa8dc;
+  border-bottom-right-radius: 5px;
+}
+.blueEnd {
+  background-color: #9fc5e8;
+  /* opacity: 0.5; */
+}
+.cornerBL {
+  border-left-width: 1px;
+  border-top-width: 0.5px;
+  border-bottom-left-radius: 5px;
+}
+.upperLadder,
+.lowerLadder {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+  box-sizing: border-box;
+}
+.middleLadder {
+  display: grid;
+  grid-template-columns: 50px 300px 50px;
+  box-sizing: border-box;
+}
+
+/***************************************************** Player home stylings ***********************************************/
+.gameBoard {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  box-sizing: border-box;
+}
+.player1Home {
+  /* border: blue solid 1px; */
+  display: flex;
+  justify-content: center;
+}
+.player2Home {
+  /* border: blue solid 1px; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* .playerInfo{
+    display: flex;
+    justify-content: center;
+} */
+.playerInfo > div {
+  border: #ccd0cb 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.endForRedPawnA,
+.endForRedPawnB,
+.endForBluePawnA,
+.endForBluePawnA {
+  align-self: center;
+}
+.endForRedPawnA,
+.endForRedPawnB {
+  border: 0.5px solid #ccd0cb;
+  border-radius: 2px;
+}
+.endForBluePawnA,
+.endForBluePawnA {
+  border: 0.5px solid #ccd0cb;
+  border-radius: 2px;
+}
+.playerInfo h3 {
+  text-align: center;
+}
+.playerBInfo {
+  align-items: flex-end;
+}
+
+/********************** Pawn Stylings ******************/
+
+.redPawn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px rgb(255, 0, 221) solid;
+  align-self: center;
+  background-color: rgb(202, 154, 154);
+  margin: 2px;
+}
+.bluePawn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px rgb(0, 195, 255) solid;
+  align-self: center;
+  background-color: rgb(132, 177, 204);
+  margin: 2px;
+}
+
+/**************** Center Boxes styling ***************/
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.mid div {
+  width: 100px;
+  height: 50px;
+  box-sizing: border-box;
+  border: #ccd0cb 1px solid;
+  align-self: center;
+}
+.instBar {
+  text-align: center;
+  border-bottom: 0.5px;
+  /* border-radius: 5px 5px 0 0; */
+  line-height: 50px;
+  background-color: #fff;
+}
+.btn,
+.btnEnter {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 5px 5px;
+}
+.btnEnter {
+  border-top: 0.5px;
+}
+#inputBox {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 2px 10px;
+  box-sizing: border-box;
+  border: 0;
+  text-align: center;
+}
+#btnEnter {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.diceNo {
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+}
+
+/* hover stylings */
+
+.active:hover {
+  cursor: pointer;
+}
+
+/* ****** animation classes ****** */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    bottom: 0;
+  }
+
+  70% {
+    bottom: 10px;
+    transform: scale(1);
+  }
+
+  100% {
+    bottom: 0;
+    transform: scale(0.7);
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+/****************** button stylings **********************/
+.bgmusicsvg {
+  height: 20px;
+  width: 20px;
+}
+
+/************INstruction bar stylings*************/
+.instructions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.instructions::before {
+  position: relative;
+  bottom: 0;
+  content: "⮝";
+  border-radius: 20px;
+  animation: pulse 2s infinite;
+}
